@@ -38,10 +38,16 @@ const anecdoteReducer = (store = initialState, action) => {
 }
 
 export const anecdoteCreation = (content) => {
-  console.log(content)
   return {
     type: 'CREATE',
     content
+  }
+}
+
+export const anecdoteVote = (id) => {
+  return {
+    type: 'VOTE',
+    id
   }
 }
 
